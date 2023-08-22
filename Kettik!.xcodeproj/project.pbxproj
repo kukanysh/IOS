@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0799F42A7A85C600A62289 /* mountainSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0799F32A7A85C600A62289 /* mountainSampleView.swift */; };
 		DC0799F62A7AA1B600A62289 /* sampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0799F52A7AA1B600A62289 /* sampleView.swift */; };
 		DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */; };
 		DC580F5F2A55643A00DE0EF5 /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */; };
-		DC6CFDD32A87C1FD00A06954 /* exploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CFDD22A87C1FD00A06954 /* exploreView.swift */; };
 		DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */; };
 		DC7D2BBB2A42FFF300DF7799 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */; };
 		DC7D2BBD2A42FFF500DF7799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */; };
@@ -27,11 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC0799F32A7A85C600A62289 /* mountainSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mountainSampleView.swift; sourceTree = "<group>"; };
 		DC0799F52A7AA1B600A62289 /* sampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleView.swift; sourceTree = "<group>"; };
 		DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllView.swift; sourceTree = "<group>"; };
 		DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
-		DC6CFDD22A87C1FD00A06954 /* exploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreView.swift; sourceTree = "<group>"; };
 		DC7D2BB52A42FFF300DF7799 /* Kettik!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kettik!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kettik!App.swift"; sourceTree = "<group>"; };
 		DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
@@ -61,9 +57,7 @@
 		DC7D2BAC2A42FFF300DF7799 = {
 			isa = PBXGroup;
 			children = (
-				DC6CFDD22A87C1FD00A06954 /* exploreView.swift */,
 				DC0799F52A7AA1B600A62289 /* sampleView.swift */,
-				DC0799F32A7A85C600A62289 /* mountainSampleView.swift */,
 				DC9921092A6E66E1006B7991 /* LikeButtonView.swift */,
 				DC7D2BB72A42FFF300DF7799 /* ALA-Mountains */,
 				DC7D2BB62A42FFF300DF7799 /* Products */,
@@ -180,7 +174,6 @@
 				DC7D2BBB2A42FFF300DF7799 /* MainTabbedView.swift in Sources */,
 				DC7D2BCB2A4316B000DF7799 /* SettingsView.swift in Sources */,
 				DC99210A2A6E66E1006B7991 /* LikeButtonView.swift in Sources */,
-				DC0799F42A7A85C600A62289 /* mountainSampleView.swift in Sources */,
 				DC9921062A657191006B7991 /* CanyonsDetailView.swift in Sources */,
 				DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */,
 				DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */,
@@ -190,7 +183,6 @@
 				DC9921082A657191006B7991 /* MountainsDetailView.swift in Sources */,
 				DC9921072A657191006B7991 /* LakesDetailView.swift in Sources */,
 				DC580F5F2A55643A00DE0EF5 /* MostPopular.swift in Sources */,
-				DC6CFDD32A87C1FD00A06954 /* exploreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
