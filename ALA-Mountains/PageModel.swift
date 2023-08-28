@@ -20,6 +20,6 @@ struct Page: Identifiable, Equatable {
     static var samplePages: [Page] = [
         Page(name: "Explore New Places", description: "Discover the most precious places in Kazakhstan", imageUrl: "Kolsay2", tag: 1),
         Page(name: "Welcome to Kettik!", description: "Discover the most precious places in Kazakhstan", imageUrl: "Aksu", tag: 2),
-        Page(name: "You are all in", description: "Let's find your paradise", imageUrl: "Almatinskiy_pik", tag: 3),
+        Page(name: "You are all set", description: "Let's find your paradise", imageUrl: "Almatinskiy_pik", tag: 3),
     ]
 }
