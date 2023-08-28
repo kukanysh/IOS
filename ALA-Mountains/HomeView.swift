@@ -120,13 +120,12 @@ struct HomeView: View {
                     .position(x: -35, y: 10)
 
                 
-                Button("Show All") {
-                    
+                NavigationLink("Show All", destination: ShowAllView(place: place).toolbarRole(.editor))
+                    .position(x: 95, y: 10)
+                    .font(.caption)
+                    .foregroundColor(.gray)
                 }
-                .position(x: 95, y: 10)
-                .font(.caption)
-                .foregroundColor(.gray)
-            }
+                
             ScrollView(.horizontal, showsIndicators: false, content:  {
                 HStack(spacing: 20) {
                     NavigationLink(destination: LakesDetailView(place: LakesList.titles.first!).toolbarRole(.editor), label: {

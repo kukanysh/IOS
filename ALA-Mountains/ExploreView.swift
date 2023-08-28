@@ -171,8 +171,6 @@ struct ExploreView: View {
         }
     }
     
-    
-    
 }
 
 struct ExploreView_Previews: PreviewProvider {
