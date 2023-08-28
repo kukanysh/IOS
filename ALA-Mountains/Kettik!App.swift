@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct KettikApp: App {
+    
+    @State private var isOnboardingCompleted = false
+
     var body: some Scene {
         WindowGroup {
-            MainTabbedView()
+            if isOnboardingCompleted {
+                MainTabbedView()
+            } else {
+                OnboardingScreenView(isOnboardingCompleted: $isOnboardingCompleted)
+            }
         }
     }
 }

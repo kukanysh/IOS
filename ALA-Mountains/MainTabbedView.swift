@@ -39,18 +39,21 @@ enum TabbedItems: Int, CaseIterable {
 
 struct MainTabbedView: View {
     
+    
+    
     @State var selectedTab = 0
     
     var body: some View {
         
         ZStack(alignment: .bottom) {
+            
             TabView(selection: $selectedTab) {
                 HomeView(place: PlacesList.titles.first!)
                     .tag(0)
-                
+
                 ExploreView()
                     .tag(1)
-                
+
                 SettingsView()
                     .tag(2)
             }
@@ -69,13 +72,15 @@ struct MainTabbedView: View {
                 .frame(width: UIScreen.main.bounds.width, height: 90)
                 .background(Color("tabBar").opacity(1))
                 .cornerRadius(35)
-                
+
             }.edgesIgnoringSafeArea(.all)
             
         }.edgesIgnoringSafeArea(.all)
         
          
     }
+    
+    
         
 }
 
