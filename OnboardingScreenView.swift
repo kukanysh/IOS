@@ -30,8 +30,11 @@ struct OnboardingScreenView: View {
                             HStack {
                                 Text("Get Started!")
                                     .foregroundColor(.white)
-                                    .font(.title)
-                                    .padding(.trailing, 5)
+                                    .font(.title.bold())
+                                    .fontDesign(.rounded)
+                                    .fontDesign(.monospaced)
+                                    
+                                    
                                     
                                 
 //                                Image(systemName: "arrow.right")
@@ -44,7 +47,7 @@ struct OnboardingScreenView: View {
                             .background {
                                 Capsule()
                                     .fill(Color("tabBar"))
-                                    .frame(width: 280, height: 80)
+                                    .frame(width: 240, height: 60)
                                 
                         }
                         }).position(x: UIScreen.main.bounds.width/2+5, y: 350)

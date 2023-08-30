@@ -14,6 +14,10 @@ struct PageView: View {
     var body: some View {
         ZStack {
             
+            Color(.white)
+                .ignoresSafeArea(.all)
+                
+            
             Text(page.name)
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -22,7 +26,7 @@ struct PageView: View {
                 .foregroundColor(.black)
                 .multilineTextAlignment(.leading)
                 .frame(width: 300, alignment: .leading)
-                .position(x: 175, y: 150)
+                .position(x: 165, y: 150)
                 .padding(.trailing)
             
             
@@ -36,7 +40,7 @@ struct PageView: View {
                 .opacity(0.5)
                 .multilineTextAlignment(.leading)
                 .frame(width: 400, alignment: .leading)
-                .position(x: 225, y: 270)
+                .position(x: 215, y: 270)
             
             Image(page.imageUrl)
                 .resizable()
@@ -44,13 +48,7 @@ struct PageView: View {
                 .scaledToFit()
                 .edgesIgnoringSafeArea(.top)
                 .position(x: 215, y: 580)
-            
-            
-            
-            
-            
-            
-            
+    
             
         }.edgesIgnoringSafeArea(.all)
     }
