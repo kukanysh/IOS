@@ -21,6 +21,7 @@ struct MountainsDetailView: View {
                 GeometryReader { reader -> AnyView in
                     
                     let offset = reader.frame(in: .global).minY
+                    
                     return AnyView(
                         Image(place.imageName)
                             .resizable()
@@ -46,6 +47,8 @@ struct MountainsDetailView: View {
                     .multilineTextAlignment(.trailing)
                     .padding(.top, -570)
                     .padding(.trailing, 195)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                    .position(x: 255)
                 
                 
                 

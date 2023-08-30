@@ -115,8 +115,8 @@ struct ExploreView: View {
                                 .font(.title2.bold())
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 150)
-                                .position(x: 75, y: 190)
+                                .frame(width: 150, alignment: .leading)
+                                .position(x: 95, y: 190)
                                                             
                             
                         }
@@ -138,8 +138,8 @@ struct ExploreView: View {
                                 .font(.title2.bold())
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 100)
-                                .position(x: 65, y: 195)
+                                .frame(width: 100, alignment: .leading)
+                                .position(x: 75, y: 195)
                         }
                     })
                 }
@@ -157,9 +157,9 @@ struct ExploreView: View {
                                 .font(.title2.bold())
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 100)
+                                .frame(width: 100, alignment: .leading)
                                 .padding(.trailing, 15)
-                                .position(x: 75, y: 200)
+                                .position(x: 80, y: 200)
                         }
                     })
                 }

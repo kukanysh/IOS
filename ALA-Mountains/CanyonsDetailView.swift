@@ -45,6 +45,8 @@ struct CanyonsDetailView: View {
                     .multilineTextAlignment(.trailing)
                     .padding(.top, -570)
                     .padding(.trailing, 195)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                    .position(x: 255)
                 
                 
                 HStack {

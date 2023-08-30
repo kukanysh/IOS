@@ -27,18 +27,27 @@ struct OnboardingScreenView: View {
                         Button(action: {
                             goToZero()
                         }, label: {
-                            Image(systemName: "arrow.right")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 40, height: 39)
-                                .foregroundColor(.black)
-                                .background {
-                                    Circle()
-                                        .fill(Color("tabBar"))
-                                        .frame(width: 80, height: 80)
+                            HStack {
+                                Text("Get Started!")
+                                    .foregroundColor(.white)
+                                    .font(.title)
+                                    .padding(.trailing, 5)
                                     
-                                }
-                        }).position(x: 350, y: 350)
+                                
+//                                Image(systemName: "arrow.right")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .frame(width: 40, height: 39)
+//                                    .foregroundColor(.black)
+                                    
+                            }
+                            .background {
+                                Capsule()
+                                    .fill(Color("tabBar"))
+                                    .frame(width: 280, height: 80)
+                                
+                        }
+                        }).position(x: UIScreen.main.bounds.width/2+5, y: 350)
                         
                             
                 
@@ -50,7 +59,7 @@ struct OnboardingScreenView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 40, height: 39)
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .background {
                                     Circle()
                                         .fill(Color("tabBar"))
