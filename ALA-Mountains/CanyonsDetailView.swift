@@ -91,7 +91,7 @@ struct CanyonsDetailView: View {
                     .padding(.trailing, 295)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
-                    .position(x: 243, y: 0)
+                    .position(x: 233, y: 0)
                 
                 Text(place.description)
                     .opacity(0.6)
