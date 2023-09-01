@@ -16,7 +16,7 @@ struct LakesDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 GeometryReader { reader -> AnyView in
                     
                     let offset = reader.frame(in: .global).minY
@@ -88,12 +88,15 @@ struct LakesDetailView: View {
                     .font(.title2.bold())
                     .padding(.top, -480)
                     .padding(.trailing, 295)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                    .multilineTextAlignment(.leading)
+                    .position(x: 243, y: 0)
                 
                 Text(place.description)
                     .opacity(0.6)
                     .lineSpacing(8)
                     .padding(.top, -430)
-                    .frame(width: 380)
+                    .frame(width: 380, alignment: .leading)
                     .padding(.leading, 5)
                 
                 //additional info
