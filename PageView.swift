@@ -31,7 +31,7 @@ struct PageView: View {
             
             
             Text(page.description)
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.light)
                 .fontDesign(.rounded)
                 .fontDesign(.monospaced)
@@ -40,7 +40,7 @@ struct PageView: View {
                 .opacity(0.5)
                 .multilineTextAlignment(.leading)
                 .frame(width: 400, alignment: .leading)
-                .position(x: 215, y: 270)
+                .position(x: 215, y: 260)
             
             Image(page.imageUrl)
                 .resizable()
