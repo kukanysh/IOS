@@ -120,10 +120,11 @@ struct HomeView: View {
                     .position(x: -35, y: 10)
 
                 
-                NavigationLink("Show All", destination: ShowAllView(place: place).toolbarRole(.editor))
+                NavigationLink("Show All", destination: ShowAllView().toolbarRole(.editor).navigationTitle("Most popular"))
                     .position(x: 95, y: 10)
                     .font(.caption)
                     .foregroundColor(.gray)
+                    
                 }
                 
             ScrollView(.horizontal, showsIndicators: false, content:  {
