@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0799F62A7AA1B600A62289 /* sampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0799F52A7AA1B600A62289 /* sampleView.swift */; };
+		DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */; };
+		DC580F5F2A55643A00DE0EF5 /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */; };
+		DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */; };
+		DC7D2BBB2A42FFF300DF7799 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */; };
+		DC7D2BBD2A42FFF500DF7799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */; };
+		DC7D2BC02A42FFF500DF7799 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7D2BBF2A42FFF500DF7799 /* Preview Assets.xcassets */; };
+		DC7D2BC72A43168F00DF7799 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BC62A43168F00DF7799 /* HomeView.swift */; };
+		DC7D2BCB2A4316B000DF7799 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */; };
+		DC8330662A9CB66400EAF682 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8330652A9CB66400EAF682 /* PageModel.swift */; };
+		DC8330682A9CB85600EAF682 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8330672A9CB85600EAF682 /* PageView.swift */; };
+		DC83306A2A9CCABC00EAF682 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8330692A9CCABC00EAF682 /* OnboardingScreenView.swift */; };
+		DC9921062A657191006B7991 /* CanyonsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9921032A657191006B7991 /* CanyonsDetailView.swift */; };
+		DC9921072A657191006B7991 /* LakesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9921042A657191006B7991 /* LakesDetailView.swift */; };
+		DC9921082A657191006B7991 /* MountainsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9921052A657191006B7991 /* MountainsDetailView.swift */; };
+		DC99210A2A6E66E1006B7991 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9921092A6E66E1006B7991 /* LikeButtonView.swift */; };
+		DCA2793E2A483495002962E2 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2793D2A483494002962E2 /* Places.swift */; };
+		DCA279422A4AF8E9002962E2 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA279412A4AF8E9002962E2 /* ExploreView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC0799F52A7AA1B600A62289 /* sampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleView.swift; sourceTree = "<group>"; };
+		DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllView.swift; sourceTree = "<group>"; };
+		DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
+		DC7D2BB52A42FFF300DF7799 /* Kettik!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kettik!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kettik!App.swift"; sourceTree = "<group>"; };
+		DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
+		DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC7D2BBF2A42FFF500DF7799 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC7D2BC62A43168F00DF7799 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DC8330652A9CB66400EAF682 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		DC8330672A9CB85600EAF682 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		DC8330692A9CCABC00EAF682 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
+		DC9921032A657191006B7991 /* CanyonsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanyonsDetailView.swift; sourceTree = "<group>"; };
+		DC9921042A657191006B7991 /* LakesDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakesDetailView.swift; sourceTree = "<group>"; };
+		DC9921052A657191006B7991 /* MountainsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainsDetailView.swift; sourceTree = "<group>"; };
+		DC9921092A6E66E1006B7991 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
+		DCA2793D2A483494002962E2 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		DCA279412A4AF8E9002962E2 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC7D2BB22A42FFF300DF7799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC7D2BAC2A42FFF300DF7799 = {
+			isa = PBXGroup;
+			children = (
+				DC7D2BB72A42FFF300DF7799 /* ALA-Mountains */,
+				DC7D2BB62A42FFF300DF7799 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC7D2BB62A42FFF300DF7799 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D2BB52A42FFF300DF7799 /* Kettik!.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC7D2BB72A42FFF300DF7799 /* ALA-Mountains */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */,
+				DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */,
+				DCA2793D2A483494002962E2 /* Places.swift */,
+				DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */,
+				DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */,
+				DC7D2BBE2A42FFF500DF7799 /* Preview Content */,
+				DC7D2BC62A43168F00DF7799 /* HomeView.swift */,
+				DCA279412A4AF8E9002962E2 /* ExploreView.swift */,
+				DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */,
+				DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */,
+				DC9921032A657191006B7991 /* CanyonsDetailView.swift */,
+				DC9921042A657191006B7991 /* LakesDetailView.swift */,
+				DC9921052A657191006B7991 /* MountainsDetailView.swift */,
+				DC8330652A9CB66400EAF682 /* PageModel.swift */,
+				DC8330692A9CCABC00EAF682 /* OnboardingScreenView.swift */,
+				DC8330672A9CB85600EAF682 /* PageView.swift */,
+				DC9921092A6E66E1006B7991 /* LikeButtonView.swift */,
+				DC0799F52A7AA1B600A62289 /* sampleView.swift */,
+			);
+			path = "ALA-Mountains";
+			sourceTree = "<group>";
+		};
+		DC7D2BBE2A42FFF500DF7799 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D2BBF2A42FFF500DF7799 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC7D2BB42A42FFF300DF7799 /* Kettik! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7D2BC32A42FFF500DF7799 /* Build configuration list for PBXNativeTarget "Kettik!" */;
+			buildPhases = (
+				DC7D2BB12A42FFF300DF7799 /* Sources */,
+				DC7D2BB22A42FFF300DF7799 /* Frameworks */,
+				DC7D2BB32A42FFF300DF7799 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kettik!";
+			productName = "ALA-Mountains";
+			productReference = DC7D2BB52A42FFF300DF7799 /* Kettik!.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC7D2BAD2A42FFF300DF7799 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DC7D2BB42A42FFF300DF7799 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DC7D2BB02A42FFF300DF7799 /* Build configuration list for PBXProject "Kettik!" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7D2BAC2A42FFF300DF7799;
+			productRefGroup = DC7D2BB62A42FFF300DF7799 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC7D2BB42A42FFF300DF7799 /* Kettik! */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7D2BB32A42FFF300DF7799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7D2BC02A42FFF500DF7799 /* Preview Assets.xcassets in Resources */,
+				DC7D2BBD2A42FFF500DF7799 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC7D2BB12A42FFF300DF7799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7D2BC72A43168F00DF7799 /* HomeView.swift in Sources */,
+				DC7D2BBB2A42FFF300DF7799 /* MainTabbedView.swift in Sources */,
+				DC7D2BCB2A4316B000DF7799 /* SettingsView.swift in Sources */,
+				DC83306A2A9CCABC00EAF682 /* OnboardingScreenView.swift in Sources */,
+				DC99210A2A6E66E1006B7991 /* LikeButtonView.swift in Sources */,
+				DC9921062A657191006B7991 /* CanyonsDetailView.swift in Sources */,
+				DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */,
+				DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */,
+				DC0799F62A7AA1B600A62289 /* sampleView.swift in Sources */,
+				DC8330662A9CB66400EAF682 /* PageModel.swift in Sources */,
+				DCA2793E2A483495002962E2 /* Places.swift in Sources */,
+				DC8330682A9CB85600EAF682 /* PageView.swift in Sources */,
+				DCA279422A4AF8E9002962E2 /* ExploreView.swift in Sources */,
+				DC9921082A657191006B7991 /* MountainsDetailView.swift in Sources */,
+				DC9921072A657191006B7991 /* LakesDetailView.swift in Sources */,
+				DC580F5F2A55643A00DE0EF5 /* MostPopular.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC7D2BC12A42FFF500DF7799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC7D2BC22A42FFF500DF7799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7D2BC42A42FFF500DF7799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ALA-Mountains/Preview Content\"";
+				DEVELOPMENT_TEAM = 9LV7R5X4KA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kettik!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ALA-Mountains";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC7D2BC52A42FFF500DF7799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ALA-Mountains/Preview Content\"";
+				DEVELOPMENT_TEAM = 9LV7R5X4KA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kettik!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ALA-Mountains";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC7D2BB02A42FFF300DF7799 /* Build configuration list for PBXProject "Kettik!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7D2BC12A42FFF500DF7799 /* Debug */,
+				DC7D2BC22A42FFF500DF7799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7D2BC32A42FFF500DF7799 /* Build configuration list for PBXNativeTarget "Kettik!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7D2BC42A42FFF500DF7799 /* Debug */,
+				DC7D2BC52A42FFF500DF7799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC7D2BAD2A42FFF300DF7799 /* Project object */;
+}
