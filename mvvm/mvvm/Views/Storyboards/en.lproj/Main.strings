@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "TOi-n0-NOl"; */
+"TOi-n0-NOl.text" = "Login";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "eDQ-wT-fCm"; */
+"eDQ-wT-fCm.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eDQ-wT-fCm"; */
+"eDQ-wT-fCm.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "hkF-16-3rH"; */
+"hkF-16-3rH.text" = "Password";
