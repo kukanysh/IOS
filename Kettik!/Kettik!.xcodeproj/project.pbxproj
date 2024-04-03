@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0799F62A7AA1B600A62289 /* sampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0799F52A7AA1B600A62289 /* sampleView.swift */; };
 		DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */; };
 		DC580F5F2A55643A00DE0EF5 /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */; };
 		DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */; };
@@ -28,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC0799F52A7AA1B600A62289 /* sampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleView.swift; sourceTree = "<group>"; };
 		DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllView.swift; sourceTree = "<group>"; };
 		DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
 		DC7D2BB52A42FFF300DF7799 /* Kettik!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kettik!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +58,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1445812AF655590062CD88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */,
+				DC8330652A9CB66400EAF682 /* PageModel.swift */,
+				DCA2793D2A483494002962E2 /* Places.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC1445822AF655840062CD88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D2BC62A43168F00DF7799 /* HomeView.swift */,
+				DCA279412A4AF8E9002962E2 /* ExploreView.swift */,
+				DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */,
+				DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */,
+				DC9921032A657191006B7991 /* CanyonsDetailView.swift */,
+				DC9921042A657191006B7991 /* LakesDetailView.swift */,
+				DC9921052A657191006B7991 /* MountainsDetailView.swift */,
+				DC8330692A9CCABC00EAF682 /* OnboardingScreenView.swift */,
+				DC8330672A9CB85600EAF682 /* PageView.swift */,
+				DC9921092A6E66E1006B7991 /* LikeButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DC7D2BAC2A42FFF300DF7799 = {
 			isa = PBXGroup;
 			children = (
@@ -79,24 +104,12 @@
 		DC7D2BB72A42FFF300DF7799 /* ALA-Mountains */ = {
 			isa = PBXGroup;
 			children = (
+				DC1445822AF655840062CD88 /* View */,
+				DC1445812AF655590062CD88 /* Model */,
 				DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */,
 				DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */,
-				DCA2793D2A483494002962E2 /* Places.swift */,
-				DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */,
 				DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */,
 				DC7D2BBE2A42FFF500DF7799 /* Preview Content */,
-				DC7D2BC62A43168F00DF7799 /* HomeView.swift */,
-				DCA279412A4AF8E9002962E2 /* ExploreView.swift */,
-				DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */,
-				DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */,
-				DC9921032A657191006B7991 /* CanyonsDetailView.swift */,
-				DC9921042A657191006B7991 /* LakesDetailView.swift */,
-				DC9921052A657191006B7991 /* MountainsDetailView.swift */,
-				DC8330652A9CB66400EAF682 /* PageModel.swift */,
-				DC8330692A9CCABC00EAF682 /* OnboardingScreenView.swift */,
-				DC8330672A9CB85600EAF682 /* PageView.swift */,
-				DC9921092A6E66E1006B7991 /* LikeButtonView.swift */,
-				DC0799F52A7AA1B600A62289 /* sampleView.swift */,
 			);
 			path = "ALA-Mountains";
 			sourceTree = "<group>";
@@ -187,7 +200,6 @@
 				DC9921062A657191006B7991 /* CanyonsDetailView.swift in Sources */,
 				DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */,
 				DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */,
-				DC0799F62A7AA1B600A62289 /* sampleView.swift in Sources */,
 				DC8330662A9CB66400EAF682 /* PageModel.swift in Sources */,
 				DCA2793E2A483495002962E2 /* Places.swift in Sources */,
 				DC8330682A9CB85600EAF682 /* PageView.swift in Sources */,
