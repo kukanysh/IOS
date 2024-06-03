@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct SettingsView: View {
+    
+    @EnvironmentObject var locationManager: LocationManager
+    
     var body: some View {
-        ZStack {
+        VStack {
             
             
         Form {
@@ -67,6 +71,14 @@ struct SettingsView: View {
             
             
         }.navigationTitle("Settings")
+            
+            LocationButton(.shareCurrentLocation) {
+                locationManager.requestLocation()
+                    
+            }
+            .cornerRadius(25)
+            .symbolVariant(.fill)
+            .foregroundColor(.white)
         
         
         }

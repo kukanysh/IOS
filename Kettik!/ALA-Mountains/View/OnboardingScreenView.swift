@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct OnboardingScreenView: View {
     
@@ -14,6 +15,8 @@ struct OnboardingScreenView: View {
     private let dotAppearance = UIPageControl.appearance()
     
     @Binding var isOnboardingCompleted: Bool
+    
+    @EnvironmentObject var locationManager: LocationManager
     
     var body: some View {
         TabView(selection: $pageIndex) {
@@ -33,6 +36,8 @@ struct OnboardingScreenView: View {
                                     .font(.title.bold())
                                     .fontDesign(.rounded)
                                     .fontDesign(.monospaced)
+                                
+                                
                                     
                                     
                                     
@@ -70,6 +75,15 @@ struct OnboardingScreenView: View {
                                     
                                 }
                         }).position(x: 350, y: 350)
+                        
+                        LocationButton(.shareCurrentLocation) {
+                            locationManager.requestLocation()
+                                
+                        }
+                        .cornerRadius(25)
+                        .symbolVariant(.fill)
+                        .foregroundColor(.white)
+                        
                         
                         
                         Spacer()

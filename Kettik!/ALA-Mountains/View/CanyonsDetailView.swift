@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct CanyonsDetailView: View {
     
@@ -14,6 +15,10 @@ struct CanyonsDetailView: View {
     let info: [String] = ["Distance", "Time"]
     
     @Environment(\.presentationMode) var presentationMode
+    
+    
+    let url = URL(string: "https://www.youtube.com/shorts/kkN85toZgXY")!
+    
     var body: some View {
         ZStack {
             ScrollView(showsIndicators: false) {
@@ -39,14 +44,15 @@ struct CanyonsDetailView: View {
                     .padding(.top, 125)
                 
                 //title and city
-                
-                Text(place.title)
-                    .font(.title.bold())
-                    .multilineTextAlignment(.trailing)
-                    .padding(.top, -570)
-                    .padding(.trailing, 195)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                    .position(x: 230)
+                VStack(alignment: .leading) {
+                    Text(place.title)
+                        .font(.title.bold())
+                        .multilineTextAlignment(.trailing)
+                        .padding(.top, -570)
+                        .padding(.trailing, 195)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                        .position(x: 230)
+                }
                 
                 
                 HStack {
@@ -100,6 +106,19 @@ struct CanyonsDetailView: View {
                     .frame(width: 360, alignment: .leading)
                     .padding(.leading, 5)
                 
+                
+                //video
+                
+
+                    NavigationView {
+                        VideoPlayer(player: AVPlayer(url: url))
+                    }.frame(width: 350, height: 200)
+                    .cornerRadius(25)
+                    .position(x: 195, y: -180)
+                    .padding(.top, 15)
+                
+                
+                
                 //additional info
                 
                 GroupBox() {
@@ -131,11 +150,11 @@ struct CanyonsDetailView: View {
                     }
                 }
                     .frame(width: 360)
-                    .padding(.top, -300)
+                    .padding(.top, -250)
 
                 LikeButtonView()
                     .padding(.leading, 320)
-                    .padding(.top, -930)
+                    .padding(.top, -1130)
                 
                     
             }

@@ -4,7 +4,6 @@
 //
 //  Created by Куаныш Спандияр on 21.06.2023.
 //
-//GoTravel - Kazakhstan! app name
 
 import SwiftUI
 import UIKit
@@ -43,13 +42,41 @@ struct MainTabbedView: View {
     
     @State var selectedTab = 0
     
+    
+    @StateObject var locationManager = LocationManager()
+    var weatherManager = WeatherManager()
+    @State var weather: ResponseBody?
+    
     var body: some View {
         
         ZStack(alignment: .bottom) {
             
             TabView(selection: $selectedTab) {
-                HomeView(place: PlacesList.titles.first!)
-                    .tag(0)
+                
+                if let location = locationManager.location {
+                    if let weather = weather {
+                        HomeView(weather: previewWeather, place: PlacesList.titles.first!)
+                            .tag(0)
+                    } else {
+                        LoadingView()
+                            .task {
+                                do {
+                                    weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                                } catch {
+                                    print("Error getting weather: \(error)")
+                                }
+                            }
+                    }
+                } else {
+                    if locationManager.isLoading {
+                        LoadingView()
+                    } else {
+                        HomeView(weather: previewWeather, place: PlacesList.titles.first!)
+                            .tag(0)
+                            .environmentObject(locationManager)
+                    }
+                }
+                
 
                 ExploreView()
                     .tag(1)

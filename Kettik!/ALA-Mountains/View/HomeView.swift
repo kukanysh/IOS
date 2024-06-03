@@ -13,6 +13,8 @@ import UIKit
 
 struct HomeView: View {
     
+    var weather: ResponseBody
+    
     var place: Places
     
     var places: [Places] = PlacesList.titles
@@ -32,6 +34,10 @@ struct HomeView: View {
                     BitesView()
                         .padding(0)
                     
+                    WeatherView()
+                        .padding(0)
+                    
+                    
                     PlacesView()
                         .padding(0)
                     
@@ -50,10 +56,10 @@ struct HomeView: View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
                 
-                Text("Location")
-                    .font(.callout)
-                    .fontDesign(.rounded)
-                    .opacity(0.6)
+//                Text("Location")
+//                    .font(.callout)
+//                    .fontDesign(.rounded)
+//                    .opacity(0.6)
                 
                 
                     HStack {
@@ -69,7 +75,7 @@ struct HomeView: View {
 //                    .font(.title)
                 Text("Find your favorite place")
                     .font(.title.bold())
-                    .fontWeight(.medium)
+                    .fontWeight(.semibold)
                     .fontDesign(.rounded)
                     
                 
@@ -77,9 +83,6 @@ struct HomeView: View {
                 
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            
-            
-            
         }
     }
     
@@ -280,9 +283,37 @@ struct HomeView: View {
     }
     
     @ViewBuilder
-    func RecomendationsView()-> some View {
-        ZStack {
+    func WeatherView()-> some View {
+        VStack {
+            Spacer()
             
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Weather now")
+                    .bold().padding(.bottom)
+                
+                HStack {
+                    WeatherRow(logo: "thermometer", name: "Min temp", value: (weather.main.tempMin.roundDouble() + "°"))
+                    
+                    Spacer()
+                    
+                    WeatherRow(logo: "thermometer", name: "Max temp", value: (weather.main.tempMax.roundDouble() + "°"))
+                }
+                
+                HStack {
+                    WeatherRow(logo: "wind", name: "Wind speed", value: (weather.wind.speed.roundDouble() + " m/s"))
+                    
+                    Spacer()
+                    
+                    WeatherRow(logo: "humidity", name: "Humidity", value: (weather.main.humidity.roundDouble() + "%"))
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .padding(.bottom, 20)
+            .foregroundColor(Color(hue: 0.561, saturation: 1, brightness: 0.935))
+            .background(.regularMaterial)
+            .cornerRadius(20)
+            .padding(10)
         }
     }
     
@@ -296,7 +327,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(place: PlacesList.titles.first!)
+        HomeView(weather: previewWeather, place: PlacesList.titles.first!)
         
     }
 }

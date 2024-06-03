@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */; };
 		DC580F5F2A55643A00DE0EF5 /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */; };
+		DC7184382BECFC0800F59BDC /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7184372BECFC0800F59BDC /* WeatherRow.swift */; };
+		DC71843A2BECFC8E00F59BDC /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7184392BECFC8E00F59BDC /* WeatherManager.swift */; };
+		DC71843C2BECFCCB00F59BDC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71843B2BECFCCB00F59BDC /* Extensions.swift */; };
+		DC71843E2BECFE7800F59BDC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71843D2BECFE7800F59BDC /* ModelData.swift */; };
+		DC7184402BED000300F59BDC /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC71843F2BED000300F59BDC /* weatherData.json */; };
+		DC7184422BED00BB00F59BDC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7184412BED00BB00F59BDC /* LocationManager.swift */; };
+		DC7184442BED074600F59BDC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7184432BED074600F59BDC /* LoadingView.swift */; };
 		DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */; };
 		DC7D2BBB2A42FFF300DF7799 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */; };
 		DC7D2BBD2A42FFF500DF7799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */; };
@@ -29,6 +36,13 @@
 /* Begin PBXFileReference section */
 		DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllView.swift; sourceTree = "<group>"; };
 		DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
+		DC7184372BECFC0800F59BDC /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		DC7184392BECFC8E00F59BDC /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		DC71843B2BECFCCB00F59BDC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC71843D2BECFE7800F59BDC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		DC71843F2BED000300F59BDC /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		DC7184412BED00BB00F59BDC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DC7184432BED074600F59BDC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		DC7D2BB52A42FFF300DF7799 /* Kettik!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kettik!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7D2BB82A42FFF300DF7799 /* Kettik!App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kettik!App.swift"; sourceTree = "<group>"; };
 		DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
@@ -64,6 +78,7 @@
 				DC580F5E2A55643A00DE0EF5 /* MostPopular.swift */,
 				DC8330652A9CB66400EAF682 /* PageModel.swift */,
 				DCA2793D2A483494002962E2 /* Places.swift */,
+				DC7184372BECFC0800F59BDC /* WeatherRow.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -73,14 +88,15 @@
 			children = (
 				DC7D2BC62A43168F00DF7799 /* HomeView.swift */,
 				DCA279412A4AF8E9002962E2 /* ExploreView.swift */,
-				DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */,
-				DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */,
 				DC9921032A657191006B7991 /* CanyonsDetailView.swift */,
 				DC9921042A657191006B7991 /* LakesDetailView.swift */,
 				DC9921052A657191006B7991 /* MountainsDetailView.swift */,
+				DC7D2BCA2A4316B000DF7799 /* SettingsView.swift */,
+				DC580F5C2A55642600DE0EF5 /* ShowAllView.swift */,
 				DC8330692A9CCABC00EAF682 /* OnboardingScreenView.swift */,
 				DC8330672A9CB85600EAF682 /* PageView.swift */,
 				DC9921092A6E66E1006B7991 /* LikeButtonView.swift */,
+				DC7184392BECFC8E00F59BDC /* WeatherManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +104,8 @@
 		DC7D2BAC2A42FFF300DF7799 = {
 			isa = PBXGroup;
 			children = (
+				DC71843F2BED000300F59BDC /* weatherData.json */,
+				DC71843B2BECFCCB00F59BDC /* Extensions.swift */,
 				DC7D2BB72A42FFF300DF7799 /* ALA-Mountains */,
 				DC7D2BB62A42FFF300DF7799 /* Products */,
 			);
@@ -110,6 +128,9 @@
 				DC7D2BBA2A42FFF300DF7799 /* MainTabbedView.swift */,
 				DC7D2BBC2A42FFF500DF7799 /* Assets.xcassets */,
 				DC7D2BBE2A42FFF500DF7799 /* Preview Content */,
+				DC71843D2BECFE7800F59BDC /* ModelData.swift */,
+				DC7184412BED00BB00F59BDC /* LocationManager.swift */,
+				DC7184432BED074600F59BDC /* LoadingView.swift */,
 			);
 			path = "ALA-Mountains";
 			sourceTree = "<group>";
@@ -181,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC7D2BC02A42FFF500DF7799 /* Preview Assets.xcassets in Resources */,
+				DC7184402BED000300F59BDC /* weatherData.json in Resources */,
 				DC7D2BBD2A42FFF500DF7799 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,13 +215,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC7D2BC72A43168F00DF7799 /* HomeView.swift in Sources */,
+				DC71843C2BECFCCB00F59BDC /* Extensions.swift in Sources */,
+				DC71843E2BECFE7800F59BDC /* ModelData.swift in Sources */,
 				DC7D2BBB2A42FFF300DF7799 /* MainTabbedView.swift in Sources */,
+				DC71843A2BECFC8E00F59BDC /* WeatherManager.swift in Sources */,
+				DC7184442BED074600F59BDC /* LoadingView.swift in Sources */,
 				DC7D2BCB2A4316B000DF7799 /* SettingsView.swift in Sources */,
+				DC7184382BECFC0800F59BDC /* WeatherRow.swift in Sources */,
 				DC83306A2A9CCABC00EAF682 /* OnboardingScreenView.swift in Sources */,
 				DC99210A2A6E66E1006B7991 /* LikeButtonView.swift in Sources */,
 				DC9921062A657191006B7991 /* CanyonsDetailView.swift in Sources */,
 				DC580F5D2A55642600DE0EF5 /* ShowAllView.swift in Sources */,
 				DC7D2BB92A42FFF300DF7799 /* Kettik!App.swift in Sources */,
+				DC7184422BED00BB00F59BDC /* LocationManager.swift in Sources */,
 				DC8330662A9CB66400EAF682 /* PageModel.swift in Sources */,
 				DCA2793E2A483495002962E2 /* Places.swift in Sources */,
 				DC8330682A9CB85600EAF682 /* PageView.swift in Sources */,
@@ -264,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -319,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

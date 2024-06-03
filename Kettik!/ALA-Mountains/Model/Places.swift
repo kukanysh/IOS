@@ -16,6 +16,7 @@ struct Places: Identifiable {
     let height: String
     let distance: String
     let time: String
+    
 }
 
 struct Canyons: Identifiable {

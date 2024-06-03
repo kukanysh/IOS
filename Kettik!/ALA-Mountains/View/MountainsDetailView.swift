@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct MountainsDetailView: View {
     
@@ -14,6 +15,8 @@ struct MountainsDetailView: View {
     let info: [String] = ["Distance", "Time", "Height"]
     
     @Environment(\.presentationMode) var presentationMode
+    
+    let url = URL(string: "https://www.youtube.com/shorts/kkN85toZgXY")!
 
     var body: some View {
         ZStack {
@@ -51,13 +54,15 @@ struct MountainsDetailView: View {
                 
                 //title and city
                 
-                Text(place.title)
-                    .font(.title.bold())
-                    .multilineTextAlignment(.trailing)
-                    .padding(.top, -570)
-                    .padding(.trailing, 235)
-                    .frame(width: .infinity, height: .infinity, alignment: .leading)
+                VStack(alignment: .leading) {
+                    Text(place.title)
+                        .font(.title.bold())
+                        .multilineTextAlignment(.trailing)
+                        .padding(.top, -570)
+                        .padding(.trailing, 235)
+                        .frame(width: .infinity, height: .infinity, alignment: .leading)
                     .position(x: 225)
+                }
                 
                 
                 
@@ -116,6 +121,22 @@ struct MountainsDetailView: View {
                     .padding(.leading, 2)
                     .multilineTextAlignment(.leading)
                 
+                
+                
+                //video
+                
+
+                    NavigationView {
+                        VideoPlayer(player: AVPlayer(url: url))
+                    }.frame(width: 350, height: 200)
+                    .cornerRadius(25)
+                    .position(x: 195, y: -180)
+                    .padding(.top, 15)
+                
+                
+                
+                
+                
                 //additional info
                 
                 GroupBox() {
@@ -150,12 +171,12 @@ struct MountainsDetailView: View {
                     }
                 }
                     .frame(width: 350)
-                    .padding(.top, -300)
+                    .padding(.top, -250)
                 
                 
                 LikeButtonView()
                     .padding(.leading, 320)
-                    .padding(.top, -930)
+                    .padding(.top, -1130)
                 
                     
             }

@@ -11,13 +11,17 @@ import SwiftUI
 struct KettikApp: App {
     
     @State private var isOnboardingCompleted = false
+    
+    let locationManager = LocationManager()
 
     var body: some Scene {
         WindowGroup {
             if isOnboardingCompleted {
                 MainTabbedView()
+                    .environmentObject(locationManager)
             } else {
                 OnboardingScreenView(isOnboardingCompleted: $isOnboardingCompleted)
+                    .environmentObject(locationManager)
             }
         }
     }

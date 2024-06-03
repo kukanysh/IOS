@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct LakesDetailView: View {
     
@@ -14,6 +15,9 @@ struct LakesDetailView: View {
     let info: [String] = ["Distance", "Time", "Depth"]
     
     @Environment(\.presentationMode) var presentationMode
+    
+    let url = URL(string: "https://www.youtube.com/shorts/kkN85toZgXY")!
+    
     var body: some View {
         ZStack {
             ScrollView(showsIndicators: false) {
@@ -39,14 +43,15 @@ struct LakesDetailView: View {
                     .padding(.top, 125)
                 
                 //title and city
+                    
+                    Text(place.title)
+                        .font(.title.bold())
+                        .multilineTextAlignment(.trailing)
+                        .padding(.top, -570)
+                        .padding(.trailing, 235)
+                        .frame(width: 350, height: 30, alignment: .leading)
+                        .position(x: 205)
                 
-                Text(place.title)
-                    .font(.title.bold())
-                    .multilineTextAlignment(.trailing)
-                    .padding(.top, -570)
-                    .padding(.trailing, 235)
-                    .frame(width: .infinity, height: .infinity, alignment: .leading)
-                    .position(x: 195)
                 
                 HStack {
                     Image(systemName: "star")
@@ -99,6 +104,18 @@ struct LakesDetailView: View {
                     .frame(width: 360, alignment: .leading)
                     .padding(.leading, 5)
                 
+                
+                //video
+                
+
+                    NavigationView {
+                        VideoPlayer(player: AVPlayer(url: url))
+                    }.frame(width: 350, height: 200)
+                    .cornerRadius(25)
+                    .position(x: 195, y: -180)
+                    .padding(.top, 15)
+                
+                
                 //additional info
                 
                 GroupBox() {
@@ -133,12 +150,12 @@ struct LakesDetailView: View {
                     }
                 }
                     .frame(width: 360)
-                    .padding(.top, -300)
+                    .padding(.top, -250)
                 
                 
                 LikeButtonView()
                     .padding(.leading, 320)
-                    .padding(.top, -930)
+                    .padding(.top, -1130)
                 
                     
             }
