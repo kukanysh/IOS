@@ -9,42 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var locationManager = LocationManager()
-    
-    
-    @IBOutlet var imageName: UIImageView!
-    
-    @IBOutlet var searchButton: UIButton!
     
     @IBOutlet var cityName: UILabel!
     
     @IBOutlet var date: UILabel!
     
+    
     @IBOutlet var temperature: UILabel!
     
-    @IBOutlet var temperatureText: UILabel!
+    @IBOutlet var texting: UILabel!
     
     @IBOutlet var minMaxTemp: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
     }
-
-
-}
-
-
-let url = ""
-
-struct Response: Codable {
-    let results: MyResult
-    let status: String
-}
-
-struct MyResult: Codable {
+    
+    @IBAction func searchButton(_ sender: Any) {
+        print("Search is used")
+    }
+    
     
 }
-
