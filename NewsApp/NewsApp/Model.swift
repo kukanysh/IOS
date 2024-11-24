@@ -25,7 +25,7 @@ class getData: ObservableObject {
     init(type: String) {
         
         let apiKey = "a4490e3c26c14d15b30a06ea958a1c2a"
-        let source = "https://newsapi.org/v2/\(type)?q=tesla&from=2024-02-27&to=2024-02-27&sortBy=popularity&apiKey=\(apiKey)"
+        let source = "https://newsapi.org/v2/\(type)?country=us&category=business&apiKey=\(apiKey)"
         
         
         let url = URL(string: source)!
@@ -37,12 +37,12 @@ class getData: ObservableObject {
             }
             
             let json = try! JSON(data: data!)
-            for i in json["articles"]{
-                let title = i.1["title"].stringValue
-                let description = i.1["description"].stringValue
-                let url = i.1["url"].stringValue
-                let image = i.1["urlToImage"].stringValue
-                let id = i.1["publishedAt"].stringValue
+            for item in json["articles"]{
+                let title = item.1["title"].stringValue
+                let description = item.1["description"].stringValue
+                let url = item.1["url"].stringValue
+                let image = item.1["urlToImage"].stringValue
+                let id = item.1["publishedAt"].stringValue
                 
                 
                 DispatchQueue.main.async {

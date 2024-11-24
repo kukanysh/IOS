@@ -1,0 +1,271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileReference section */
+		DC5771C22CC8BCC8001F3E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5771C32CC8BCC8001F3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5771C42CC8BCC8001F3E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5771C52CC8BCC8001F3E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5771C72CC8BCC8001F3E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5771C92CC8BCC8001F3E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC5771CA2CC8BCC8001F3E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5771CC2CC8BCC8001F3E4F /* Dice.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Dice.xcodeproj; sourceTree = "<group>"; };
+		DC5771CE2CC8BCC8001F3E4F /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		DC5771CF2CC8BCC8001F3E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5771D02CC8BCC8001F3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5771D12CC8BCC8001F3E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5771D22CC8BCC8001F3E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5771D42CC8BCC8001F3E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5771D62CC8BCC8001F3E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC5771D72CC8BCC8001F3E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5771D92CC8BCC8001F3E4F /* eggtimer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = eggtimer.xcodeproj; sourceTree = "<group>"; };
+		DC5771DB2CC8BCC8001F3E4F /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		DC5771DC2CC8BCC8001F3E4F /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		DC5771DD2CC8BCC8001F3E4F /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		DC5771DE2CC8BCC8001F3E4F /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		DC5771DF2CC8BCC8001F3E4F /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		DC5771E02CC8BCC8001F3E4F /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		DC5771E12CC8BCC8001F3E4F /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		DC5771E32CC8BCC8001F3E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5771E42CC8BCC8001F3E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5771E52CC8BCC8001F3E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5771E62CC8BCC8001F3E4F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5771E72CC8BCC8001F3E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5771E92CC8BCC8001F3E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC5771EA2CC8BCC8001F3E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5771EC2CC8BCC8001F3E4F /* Xylophone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Xylophone.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DC5771BB2CC8BCBD001F3E4F = {
+			isa = PBXGroup;
+			children = (
+				DC5771CD2CC8BCC8001F3E4F /* Dicee */,
+				DC5771DA2CC8BCC8001F3E4F /* Egg */,
+				DC5771ED2CC8BCC8001F3E4F /* xylophonee */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5771CB2CC8BCC8001F3E4F /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771C22CC8BCC8001F3E4F /* AppDelegate.swift */,
+				DC5771C32CC8BCC8001F3E4F /* Assets.xcassets */,
+				DC5771C42CC8BCC8001F3E4F /* Info.plist */,
+				DC5771C62CC8BCC8001F3E4F /* LaunchScreen.storyboard */,
+				DC5771C82CC8BCC8001F3E4F /* Main.storyboard */,
+				DC5771C92CC8BCC8001F3E4F /* SceneDelegate.swift */,
+				DC5771CA2CC8BCC8001F3E4F /* ViewController.swift */,
+			);
+			path = Dice;
+			sourceTree = "<group>";
+		};
+		DC5771CD2CC8BCC8001F3E4F /* Dicee */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771CB2CC8BCC8001F3E4F /* Dice */,
+				DC5771CC2CC8BCC8001F3E4F /* Dice.xcodeproj */,
+			);
+			path = Dicee;
+			sourceTree = "<group>";
+		};
+		DC5771D82CC8BCC8001F3E4F /* eggtimer */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771CE2CC8BCC8001F3E4F /* alarm_sound.mp3 */,
+				DC5771CF2CC8BCC8001F3E4F /* AppDelegate.swift */,
+				DC5771D02CC8BCC8001F3E4F /* Assets.xcassets */,
+				DC5771D12CC8BCC8001F3E4F /* Info.plist */,
+				DC5771D32CC8BCC8001F3E4F /* LaunchScreen.storyboard */,
+				DC5771D52CC8BCC8001F3E4F /* Main.storyboard */,
+				DC5771D62CC8BCC8001F3E4F /* SceneDelegate.swift */,
+				DC5771D72CC8BCC8001F3E4F /* ViewController.swift */,
+			);
+			path = eggtimer;
+			sourceTree = "<group>";
+		};
+		DC5771DA2CC8BCC8001F3E4F /* Egg */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771D82CC8BCC8001F3E4F /* eggtimer */,
+				DC5771D92CC8BCC8001F3E4F /* eggtimer.xcodeproj */,
+			);
+			path = Egg;
+			sourceTree = "<group>";
+		};
+		DC5771E22CC8BCC8001F3E4F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771DB2CC8BCC8001F3E4F /* A.wav */,
+				DC5771DC2CC8BCC8001F3E4F /* B.wav */,
+				DC5771DD2CC8BCC8001F3E4F /* C.wav */,
+				DC5771DE2CC8BCC8001F3E4F /* D.wav */,
+				DC5771DF2CC8BCC8001F3E4F /* E.wav */,
+				DC5771E02CC8BCC8001F3E4F /* F.wav */,
+				DC5771E12CC8BCC8001F3E4F /* G.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		DC5771EB2CC8BCC8001F3E4F /* Xylophone */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771E22CC8BCC8001F3E4F /* Sounds */,
+				DC5771E32CC8BCC8001F3E4F /* AppDelegate.swift */,
+				DC5771E42CC8BCC8001F3E4F /* Assets.xcassets */,
+				DC5771E52CC8BCC8001F3E4F /* Info.plist */,
+				DC5771E62CC8BCC8001F3E4F /* LaunchScreen.storyboard */,
+				DC5771E82CC8BCC8001F3E4F /* Main.storyboard */,
+				DC5771E92CC8BCC8001F3E4F /* SceneDelegate.swift */,
+				DC5771EA2CC8BCC8001F3E4F /* ViewController.swift */,
+			);
+			path = Xylophone;
+			sourceTree = "<group>";
+		};
+		DC5771ED2CC8BCC8001F3E4F /* xylophonee */ = {
+			isa = PBXGroup;
+			children = (
+				DC5771EB2CC8BCC8001F3E4F /* Xylophone */,
+				DC5771EC2CC8BCC8001F3E4F /* Xylophone.xcodeproj */,
+			);
+			path = xylophonee;
+			sourceTree = "<group>";
+		};
+		DC5771EE2CC8BCC8001F3E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5771F02CC8BCC8001F3E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5771F22CC8BCC8001F3E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		DC5771BC2CC8BCBD001F3E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = DC5771BF2CC8BCBD001F3E4F /* Build configuration list for PBXProject "ios dev" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5771BB2CC8BCBD001F3E4F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DC5771F22CC8BCC8001F3E4F /* Products */;
+					ProjectRef = DC5771CC2CC8BCC8001F3E4F /* Dice.xcodeproj */;
+				},
+				{
+					ProductGroup = DC5771F02CC8BCC8001F3E4F /* Products */;
+					ProjectRef = DC5771D92CC8BCC8001F3E4F /* eggtimer.xcodeproj */;
+				},
+				{
+					ProductGroup = DC5771EE2CC8BCC8001F3E4F /* Products */;
+					ProjectRef = DC5771EC2CC8BCC8001F3E4F /* Xylophone.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXVariantGroup section */
+		DC5771C62CC8BCC8001F3E4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5771C52CC8BCC8001F3E4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5771C82CC8BCC8001F3E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5771C72CC8BCC8001F3E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5771D32CC8BCC8001F3E4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5771D22CC8BCC8001F3E4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5771D52CC8BCC8001F3E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5771D42CC8BCC8001F3E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5771E82CC8BCC8001F3E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5771E72CC8BCC8001F3E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC5771C02CC8BCBD001F3E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DC5771C12CC8BCBD001F3E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5771BF2CC8BCBD001F3E4F /* Build configuration list for PBXProject "ios dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5771C02CC8BCBD001F3E4F /* Debug */,
+				DC5771C12CC8BCBD001F3E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5771BC2CC8BCBD001F3E4F /* Project object */;
+}

@@ -52,7 +52,7 @@ struct TopHeadlinesView: View {
                 }
             }
             .navigationBarTitle("Top Headlines")
-            .frame(width: 420)
+            .frame(width: 430)
         }
     }
     
@@ -71,7 +71,7 @@ struct BookmarkButton: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 28)
-                .foregroundColor(isSaved ? .indigo : .gray)
+                .foregroundColor(isSaved ? .black : .gray)
         }
         .buttonStyle(PlainButtonStyle())
     }
